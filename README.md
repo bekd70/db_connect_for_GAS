@@ -14,7 +14,7 @@ you will need to install the drivers for Oracle (oci) on the server running the 
 The request should look like the following example for Google Apps Script
 
 
-   let postData: {
+   `let postData: {
       DomainPwd: "YOUR_API_PASSWORD",
       dbtype: "oracle", //or MYSQL, or SQLSERVER
       host: "IP_or_Hostname_to_dB_server",
@@ -23,7 +23,7 @@ The request should look like the following example for Google Apps Script
       password: Utilities.base64Encode("DB_PASSWORD"),
       schema: "TABLE_YOU_ARE_QUERYING", //FOR PS IT IS PSPRODDB
       query: ""
-    }
+    }`
     postData.query = "SELECT * FROM students WHERE enroll_status = 0";
 
     let options = {
