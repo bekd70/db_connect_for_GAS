@@ -32,7 +32,8 @@ let postData: {
         'payload' : JSON.stringify(postData)
     };
 
-    let response = UrlFetchApp.fetch(apiUrl,options);`
+    let response = UrlFetchApp.fetch(apiUrl,options);
+```
 
 response.status will contain either true or false depending on the sucess of the call
 response.message will contain an error mesage if response.status is false
