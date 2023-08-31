@@ -29,7 +29,7 @@ The request should look like the following example for Google Apps Script
     let options = {
         'method' : 'post',
         'payload' : JSON.stringify(postData)
-    };```
+    };
 
     let response = UrlFetchApp.fetch(apiUrl,options);`
 
