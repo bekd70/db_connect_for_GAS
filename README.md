@@ -14,7 +14,8 @@ you will need to install the drivers for Oracle (oci) on the server running the 
 The request should look like the following example for Google Apps Script
 
 
-   ```let postData: {
+   ```
+let postData: {
       DomainPwd: "YOUR_API_PASSWORD",
       dbtype: "oracle", //or MYSQL, or SQLSERVER
       host: "IP_or_Hostname_to_dB_server",
