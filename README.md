@@ -23,10 +23,10 @@ The request should look like the following example for Google Apps Script
       password: Utilities.base64Encode("DB_PASSWORD"),
       schema: "TABLE_YOU_ARE_QUERYING", //FOR PS IT IS PSPRODDB
       query: ""
-    }```
-    ```postData.query = "SELECT * FROM students WHERE enroll_status = 0";```
+    }
+    postData.query = "SELECT * FROM students WHERE enroll_status = 0";
 
-    ```let options = {
+    let options = {
         'method' : 'post',
         'payload' : JSON.stringify(postData)
     };```
